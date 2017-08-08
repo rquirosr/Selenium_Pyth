@@ -2,7 +2,7 @@
 """
 Created on Tue Aug  8 10:08:21 2017
 
-@author: Roberto Q.
+@author: '...'
 """
 
 """
