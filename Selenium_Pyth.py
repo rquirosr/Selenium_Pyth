@@ -213,7 +213,7 @@ def dimention(driver):
     return d if d else 3  # dimention is 3 by default
 
 """
-La función 'dimention' actúa una vez que se abren las opciones de imágenes a seleccionar para 
+La función 'dimention' actúa una vez que se abren las opciones de imágenes a seleccionar para determinar la dimensión de la matriz.
 """
 
 # ***** main procedure to identify and submit picture solution
@@ -247,7 +247,7 @@ def solve_images(driver):
 
 start = time()
 url='http://www.cre.gob.mx/ConsultaPrecios/GasLP/PlantaDistribucion.html?idiom=es'
-driver = webdriver.Chrome(executable_path="C:\Program Files (x86)\Google\Chrome\Application")
+driver = webdriver.Chrome()
 driver.get(url)
 
 mainWin = driver.current_window_handle
@@ -293,3 +293,8 @@ while i<130:
     driver.switch_to_frame(driver.find_elements_by_tag_name("iframe")[1])
     solve_images(driver)
     i=i+1
+
+
+"""
+El último loop corre hasta resolver la imagen.
+"""
